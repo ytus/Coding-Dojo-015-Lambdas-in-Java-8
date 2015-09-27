@@ -17,6 +17,6 @@ It's tested with:
 * Gradle 2.2 (+ Groovy 2.3.6)
 * Eclipse Mars
 
-This [tutorial](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html) was a bit help for me to understand lambdas. 
+This [tutorial](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html) was a big help for me when I was learning about lambdas myself. 
 
 Have fun and please let me know if there is any mistake.
