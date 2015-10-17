@@ -1,9 +1,6 @@
 package eu.abra.dojo;
 
 import com.google.common.collect.Lists;
-import eu.abra.dojo.Country;
-import eu.abra.dojo.DatabaseOperations;
-import eu.abra.dojo.Refugee;
 import java.util.List;
 import java.util.function.Predicate;
 import org.testng.Assert;
@@ -165,8 +162,12 @@ public class DatabaseOperationsTest {
 		Refugee ageela = new Refugee("Aqeela Asifi", 35, Country.ERITREA, Country.GERMANY);
 
 		// TODO
-		// Assert.assertTrue(DatabaseOperations.isFromCountryBuilder(Country.ERITREA) ??? (ageela));
-		// Assert.assertFalse(DatabaseOperations.isFromCountryBuilder(Country.CZECH_REPUBLIC) ??? (ageela));
+
+		Predicate<Refugee> isFormEritrea = DatabaseOperations.isFromCountryBuilder(Country.ERITREA);
+		Predicate<Refugee> isFormCzech = DatabaseOperations.isFromCountryBuilder(Country.CZECH_REPUBLIC);
+
+		// Assert.assertTrue(isFromEritrea ??? (ageela));
+		// Assert.assertFalse(isFromCzech ??? (ageela));
 	}
 
 	// #11

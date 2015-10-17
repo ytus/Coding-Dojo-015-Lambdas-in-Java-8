@@ -37,7 +37,7 @@ test.useTestNG()
 
 eclipse {
   project {
-    name = 'Dojo015'
+    name = 'Dojo_lambdas_in_Java8'
     sourceSets.main.java.srcDir "src/main/resources"
   }
 }
